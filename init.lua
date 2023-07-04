@@ -1,0 +1,7 @@
+require('keymaps')
+require('options')
+require('plugins')
+require('dress.colorscheme')
+require('dress.lualine')
+require('lsp')
+require('treesitter')
