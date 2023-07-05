@@ -1,0 +1,18 @@
+'nvim-lualine/lualine.nvim',
+'nvim-tree/nvim-web-devicons'
+'nvim-treesitter/nvim-treesitter',
+'nvim-tree/nvim-tree.lua',
+'nvim-telescope/telescope.nvim', tag = '0.1.1',
+requires = { { 'nvim-lua/plenary.nvim' } }
+'tpope/vim-surround'
+'gcmt/wildfire.vim'
+'tpope/vim-unimpaired'
+'lewis6991/gitsigns.nvim'
+'github/copilot.vim'
+'numToStr/Comment.nvim',
+'skywind3000/vim-terminal-help'
+'gelguy/wilder.nvim',
+'windwp/nvim-autopairs'
+'honza/vim-snippets'
+'Mofiqul/vscode.nvim'
+"shellRaining/hlchunk.nvim"
