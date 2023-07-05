@@ -2,12 +2,12 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 local opts = {
-	noremap = true, -- non-recursive
-	silent = true, -- do not show message
+    noremap = true, -- non-recursive
+    silent = true,  -- do not show message
 }
 
 vim.cmd(
-	[[
+    [[
 	noremap j h
 	noremap k j
 	noremap l k
@@ -56,6 +56,5 @@ vim.keymap.set('n', '<A-l>', ':+tabnext<CR>', opts)
 vim.keymap.set('i', 'kl', '<ESC>', opts)
 
 vim.cmd([[
-    imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
-    let g:copilot_no_tab_map = v:true
+    imap <silent><script><expr> <TAB> copilot#Accept("\<CR>")
 ]])

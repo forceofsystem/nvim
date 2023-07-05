@@ -16,8 +16,6 @@ vim.opt.smartcase = true
 vim.opt.hidden = true
 vim.opt.updatetime = 100
 vim.opt.tw = 0
-vim.opt.foldmethod = 'indent'
-vim.opt.foldlevel = 99
 vim.opt.autochdir = true
 vim.opt.autowrite = true
 vim.opt.laststatus = 2
@@ -31,17 +29,4 @@ vim.g.terminal_key = '<F12>'
 vim.g.terminal_kill = 1
 vim.g.terminal_close = 1
 
-vim.cmd([[
-    let g:dbs = []
-    let g:db_ui_save_location = '~/.config/dbui'
-]])
-
--- vim.cmd([[autocmd InsertLeave * :silent !im-select com.apple.keylayout.ABC]])
--- Translate to lua
-vim.api.nvim_create_autocmd(
-    'InsertLeave',
-    {
-        pattern = '*',
-        command = 'silent! !im-select com.apple.keylayout.ABC',
-    }
-)
+vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]])
