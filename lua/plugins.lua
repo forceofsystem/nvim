@@ -85,6 +85,28 @@ return require('packer').startup(function(use)
     use 'honza/vim-snippets'
     -- Packer:
     use 'Mofiqul/vscode.nvim'
+    use {
+        "folke/noice.nvim",
+        requires = { 'MunifTanjim/nui.nvim' },
+        config = function()
+            require("noice").setup()
+        end
+    }
+    use { "shellRaining/hlchunk.nvim",
+        config = function()
+            require('hlchunk').setup({
+                indent = {
+                    chars = { "│", "¦", "┆", "┊", },
+                    style = {
+                        "#8B00FF",
+                    },
+                },
+                blank = {
+                    enable = false,
+                }
+            })
+        end
+    }
     ---------------------------------------
     -- NOTE: PUT YOUR THIRD PLUGIN HERE --
     ---------------------------------------
