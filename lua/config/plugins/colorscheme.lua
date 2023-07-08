@@ -1,20 +1,20 @@
 return {
---  "folke/tokyonight.nvim",
---  lazy = false,
---  priority = 1000,
---  opts = {},
---  config = function()
---      vim.cmd([[colorscheme tokyonight]])
---  end
+    --  "folke/tokyonight.nvim",
+    --  lazy = false,
+    --  priority = 1000,
+    --  opts = {},
+    --  config = function()
+    --      vim.cmd([[colorscheme tokyonight]])
+    --  end
     "Mofiqul/vscode.nvim",
-    config = function ()
-       local c = require('vscode.colors').get_colors()
-       require('vscode').setup({
+    config = function()
+        local c = require('vscode.colors').get_colors()
+        require('vscode').setup({
             -- Alternatively set style in setup
             -- style = 'light'
 
             -- Enable transparent background
-            transparent = true,
+            transparent = false,
 
             -- Enable italic comment
             italic_comments = true,
@@ -31,9 +31,9 @@ return {
             group_overrides = {
                 -- this supports the same val table as vim.api.nvim_set_hl
                 -- use colors from this colorscheme by requiring vscode.colors!
-                Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
+                Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
             }
         })
-        require('vscode').load() 
+        require('vscode').load()
     end
 }
