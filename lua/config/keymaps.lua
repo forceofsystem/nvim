@@ -32,9 +32,9 @@ local nmappings = {
     { from = "<right>",      to = ":vertical resize+5<CR>", },
 
     -- Tab management
-    { from = "tu",           to = ":tabnew<CR>", },
-    { from = "tk",           to = ":-tabnext<CR>", },
-    { from = "tl",           to = ":+tabnext<CR>", },
+    { from = "<A-u>",        to = ":tabnew<CR>", },
+    { from = "<A-k>",        to = ":-tabnext<CR>", },
+    { from = "<A-l>",        to = ":+tabnext<CR>", },
     { from = "<leader><CR>", to = ":nohlsearch<CR>" },
 }
 for _, mapping in ipairs(nmappings) do
