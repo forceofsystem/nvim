@@ -18,10 +18,10 @@ local nmappings = {
 
     -- Window & splits
     { from = "<leader>w",    to = "<C-w>w", },
-    { from = "<leader>j",    to = "<C-w>k", },
-    { from = "<leader>k",    to = "<C-w>j", },
-    { from = "<leader>l",    to = "<C-w>h", },
-    { from = "<leader>;",    to = "<C-w>l", },
+    { from = "<C-l>",        to = "<C-w>k", },
+    { from = "<C-k>",        to = "<C-w>j", },
+    { from = "<C-j>",        to = "<C-w>h", },
+    { from = "<C-;>",        to = "<C-w>l", },
     { from = "sj",           to = ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", },
     { from = "sk",           to = ":set splitbelow<CR>:split<CR>", },
     { from = "sl",           to = ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>", },
