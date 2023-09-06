@@ -46,4 +46,5 @@ require("lazy").setup({
     require("config.plugins.tabline"),
     require("config.plugins.telescope"),
     require("config.plugins.filetree"),
+    require("config.plugins.flash"),
 })
